@@ -8,7 +8,6 @@ function s {
 
 function g {
   if [[ $# > 0 ]]; then
-	  print -z boom;
     git $@
   else
     git status
