@@ -1,0 +1,7 @@
+[user]
+	name = William Griffiths
+	email = william@ycymro.com
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
