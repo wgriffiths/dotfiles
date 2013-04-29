@@ -67,5 +67,8 @@ source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/env
 
+
+
 # Customize to your needs...
-export PATH=$PATH:/Users/wg/.rvm/gems/ruby-1.9.3-p392@rails32/bin:/Users/wg/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/wg/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/wg/.rvm/bin:/Users/wg/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+source /Users/will/.rvm/scripts/rvm
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
