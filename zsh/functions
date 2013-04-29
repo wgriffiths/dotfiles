@@ -1,10 +1,10 @@
-# function s {
-#   if [[ $# > 0 ]]; then
-#     svn $@
-#   else
-#     svn status
-#   fi
-# }
+function s {
+  if [[ $# > 0 ]]; then
+    svn $@
+  else
+    svn status
+  fi
+}
 
 function g {
   if [[ $# > 0 ]]; then
