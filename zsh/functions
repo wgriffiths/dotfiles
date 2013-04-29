@@ -17,4 +17,5 @@ function g {
 
 compdef g=git
 
+
 source $HOME/.dotfiles/zsh/_functions/automotive
