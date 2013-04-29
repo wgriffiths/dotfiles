@@ -1,0 +1,24 @@
+local jnlp_url=http://sbs.etlsolutions.com
+
+function sjd(){
+  jnlp_url=http://sbs-dev.etlsolutions.com
+  sbsjar $1
+}
+
+function sj(){
+    if [ -z "$1" ] 
+        then
+       echo "Oi Supply entry point id. :(" 
+           return
+    fi
+        
+        current_folder=$PWD
+        temp_folder='/tmp/entry_point_extract'
+        command rm -rf ${temp_folder} 
+        command mkdir -p ${temp_folder} 
+        command cd ${temp_folder}
+        command wget ${jnlp_url}/honda/build/$1.jar;
+        command unzip $1.jar;
+        command mate webstart_build.xml; 
+        command cd ${current_folder}
+}

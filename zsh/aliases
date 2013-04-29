@@ -6,13 +6,17 @@ elif [[ $platform == 'Darwin' ]]; then
   alias a='ls -lrthG'
 fi
 
-
 alias aliases='mate ~/.dotfiles/zsh/aliases'
-alias code='cd ~/svn'
+alias gwaith='cd ~/svn'
 alias snap='cd ~/svn/SnapOn'
 alias c='cd'
 alias d='cd ~/.dotfiles'
+alias dmate='mate ~/.dotfiles'
 alias u='cd ..'
+
+alias adra='cd ~/git'
+alias ff='cd ~/git/FfynnonFelys'
+alias 360='cd ~/git/ffestiniog360_rails'
 
 alias b='ssh wg@brenig'
 alias bdev='ssh wg@brenig'
@@ -30,7 +34,6 @@ alias sup='svn update'
 alias sdiff='svn diff | more'
 
 alias update='svn update && mvnnt'
-
 
 alias bi='bundle install'
 alias be='bundle exec'
