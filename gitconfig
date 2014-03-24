@@ -3,3 +3,5 @@
 	email = william@ycymro.com
 [credential]
 	helper = osxkeychain
+[push]
+	default = current
