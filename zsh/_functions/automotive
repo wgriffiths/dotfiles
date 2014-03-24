@@ -2,7 +2,7 @@ local jnlp_url=http://sbs.etlsolutions.com
 
 function sjd(){
   jnlp_url=http://sbs-dev.etlsolutions.com
-  sbsjar $1
+  sj $1
 }
 
 function sj(){
