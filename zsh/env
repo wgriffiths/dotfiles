@@ -1,9 +1,14 @@
 export MAVEN_OPTS='-Xmx5120m'
 #export MAVEN_OPTS='-Xmx5120m -XX:MaxPermSize=256m'
 export EDITOR=pico
-#export CVSROOT=wg@ogwen:/home/CVSROOT/
-export CVSROOT=wg@ogwen:/home/partners/
 
-export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export ES_HOST=localhost 
+export ES_VERSION=0 
+export ES_PORT=9200 
 
+export PATH=$PATH:/home/wgriffiths/apps/play/
+export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/
+export PATH=$PATH:/home/wgriffiths/apps/apache-jmeter-2.11/bin/
+
+export SCALA_HOME=/home/wgriffiths/apps/play/
+export PATH=$PATH:$SCALA_HOME/bin

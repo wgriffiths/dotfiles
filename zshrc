@@ -67,3 +67,4 @@ source $HOME/.dotfiles/zsh/env
 
 
 
+export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
