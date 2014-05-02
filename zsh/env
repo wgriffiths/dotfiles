@@ -10,5 +10,4 @@ export PATH=$PATH:/home/wgriffiths/apps/play/
 export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/
 export PATH=$PATH:/home/wgriffiths/apps/apache-jmeter-2.11/bin/
 
-export SCALA_HOME=/home/wgriffiths/apps/play/
-export PATH=$PATH:$SCALA_HOME/bin
+export PATH=$PATH:/home/wgriffiths/apps/sbt/bin 

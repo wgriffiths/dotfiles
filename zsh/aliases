@@ -19,22 +19,10 @@ alias adra='cd ~/git'
 alias ff='cd ~/git/FfynnonFelys'
 alias 360='cd ~/git/ffestiniog360_rails'
 
-alias b='ssh wg@brenig'
-alias bdev='ssh wg@brenig-dev'
-alias ogwen='ssh wg@ogwen'
 alias cwmni='ssh will@cwmni.com'
 
 alias mvnnt='mvn -U -Dmaven.test.skip=true clean install'
 alias mvnt='mvnnt'
-alias tm='mvn initialize -PTMEdit  tm:edit'
-alias tmo='mvn initialize -PTMEdit --offline tm:edit'
-alias dds='more ~/dds_settings.xml'
-
-alias sc='svn commit'
-alias sup='svn update'
-alias sdiff='svn diff | more'
-
-alias update='svn update && mvnnt'
 
 alias bi='bundle install'
 alias be='bundle exec'
@@ -57,3 +45,8 @@ alias irb='irb --readline -r irb/completion'
 alias rc='rails console'
 alias migrate='rake db:migrate db:test:prepare'
 alias rs='bundle install && rails server'
+
+
+alias p='cd /home/wgriffiths/Development/projects'
+alias swp2='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-2.2.2 /home/wgriffiths/apps/play; echo "Now using Play 2 :)"'
+alias swp1='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-1.2.5.1 /home/wgriffiths/apps/play; echo "Now using Play 1 :("'
