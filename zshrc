@@ -70,3 +70,7 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 eval "$(rbenv init -)"
 
 export PATH=~/bin:$PATH
+
+
+export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
+

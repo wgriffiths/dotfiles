@@ -1,9 +1,20 @@
 [user]
 	name = William Griffiths
-	email = william@ycymro.com
+	email = william.griffiths@thebookpeople.com
 [credential]
 	helper = osxkeychain
 [push]
 	default = simple
 [core]
 	excludesfile = /Users/will/.gitignore
+	default = tracking
+	autocrlf = input
+	editor = pico
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[alias]
+	so = remote show origin
+	po = remote prune origin
