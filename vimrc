@@ -7,16 +7,14 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-" My bundles
-"Plugin 'tpope/vim-surround'
-"Plugin 'tpope/vim-unimpaired'
 Plugin 'command-t'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'vim-airline'
-Plugin 'vim-fugitive' 
-"
+Plugin 'vim-fugitive'
+Plugin 'vim-numbertoggle'
+
 " Colors
+Plugin 'nanotech/jellybeans.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,7 +43,7 @@ set smarttab
 set noincsearch
 set ignorecase smartcase
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
-"set relativenumber
+set relativenumber
 set gdefault " assume the /g flag on :s substitutions to replace all matches in a line
 set autoindent " always set autoindenting on
 set bg=light
@@ -54,21 +52,21 @@ set tags=./tags;
 set laststatus=2
 " Use _ as a word-separator
 " set iskeyword-=_
-
+set formatoptions-=or
 " Use Silver Searcher instead of grep
 set grepprg=ag
 
 " Make the omnicomplete text readable
-:highlight PmenuSel ctermfg=black
-
+highlight PmenuSel ctermfg=black
+match Error /\s\+$/
 " Fuzzy finder: ignore stuff that can't be opened, and generated files
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
-
+let g:NumberToggleTrigger="<F2>"
 " Highlight the status line
 highlight StatusLine ctermfg=blue ctermbg=yellow
 
 " Format xml files
-au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null" 
+au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
 set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
 
@@ -94,7 +92,6 @@ set timeoutlen=500
        set undofile
        endif
 
-       
 autocmd BufNewFile,BufRead /Users/ben/code/levelup/*.rb set colorcolumn=100
 
 " Remove trailing whitespace on save for ruby files.
@@ -117,7 +114,7 @@ endif
 " Make it more obvious which paren I'm on
 hi MatchParen cterm=none ctermbg=black ctermfg=yellow
 
-" 
+"
 " ========================================================================
 " End of things set by me.
 " ========================================================================

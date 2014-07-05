@@ -9,7 +9,6 @@
 	excludesfile = /Users/will/.gitignore
 	default = tracking
 	autocrlf = input
-	editor = pico
 [color]
 	branch = auto
 	diff = auto
