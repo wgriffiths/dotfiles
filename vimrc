@@ -4,14 +4,14 @@ filetype off     " Required by vundle
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
-
 " let Vundle manage Vundle, required
+
 Plugin 'gmarik/Vundle.vim'
 Plugin 'command-t'
 Plugin 'vim-airline'
 Plugin 'vim-fugitive'
 Plugin 'vim-numbertoggle'
-Plugin 'thoughtbot/vim-rspec'
+Bundle 'thoughtbot/vim-rspec'
 " Colors
 Plugin 'nanotech/jellybeans.vim'
 
@@ -33,16 +33,12 @@ set nowrap
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set autoread
-set wmh=0
-set viminfo+=!
-set guioptions-=T
 set guifont=Triskweline_10:h10
 set et
 set sw=2
 set smarttab
 set noincsearch
 set ignorecase smartcase
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 set relativenumber
 set gdefault " assume the /g flag on :s substitutions to replace all matches in a line
 set autoindent " always set autoindenting on
@@ -55,7 +51,7 @@ set laststatus=2
 set formatoptions-=or
 " Use Silver Searcher instead of grep
 set grepprg=ag
-
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
 " Make the omnicomplete text readable
 highlight PmenuSel ctermfg=black
 match Error /\s\+$/
@@ -83,6 +79,13 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 " Don't wait so long for the next keypress (particularly in ambigious Leader
 " situations.
 set timeoutlen=500
@@ -95,12 +98,6 @@ if has('persistent_undo')
  set undodir=~/.vim/backups
  set undofile
 endif
-
-autocmd BufNewFile,BufRead /Users/ben/code/levelup/*.rb set colorcolumn=100
-
-" Remove trailing whitespace on save for ruby files.
-au BufWritePre *.rb :%s/\s\+$//e
-
 
 " Set gutter background to black
 highlight SignColumn ctermbg=black
