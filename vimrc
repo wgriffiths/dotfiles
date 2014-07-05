@@ -11,7 +11,7 @@ Plugin 'command-t'
 Plugin 'vim-airline'
 Plugin 'vim-fugitive'
 Plugin 'vim-numbertoggle'
-
+Plugin 'thoughtbot/vim-rspec'
 " Colors
 Plugin 'nanotech/jellybeans.vim'
 
@@ -76,9 +76,13 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=1
 
-let g:CommandTMaxHeight=50
+let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
-
+map <Leader>o :CommandT<CR>
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 " Don't wait so long for the next keypress (particularly in ambigious Leader
 " situations.
 set timeoutlen=500
@@ -86,11 +90,11 @@ set timeoutlen=500
 " ================ Persistent Undo ==================
  " Keep undo history across sessions, by storing in file.
  " Only works all the time.
- if has('persistent_undo')
-   silent !mkdir ~/.vim/backups > /dev/null 2>&1
-     set undodir=~/.vim/backups
-       set undofile
-       endif
+if has('persistent_undo')
+ silent !mkdir ~/.vim/backups > /dev/null 2>&1
+ set undodir=~/.vim/backups
+ set undofile
+endif
 
 autocmd BufNewFile,BufRead /Users/ben/code/levelup/*.rb set colorcolumn=100
 
