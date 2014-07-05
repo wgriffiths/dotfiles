@@ -49,6 +49,9 @@ Icon
 *.tmproj
 *.tmproject
 tmtags
+#Vim Backups
+*vim/backups*
+
 
 nbproject/private/
 build/
