@@ -50,6 +50,7 @@ set laststatus=2
 " set iskeyword-=_
 set formatoptions-=or
 " Use Silver Searcher instead of grep
+set wildmenu
 set grepprg=ag
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 " Make the omnicomplete text readable
@@ -72,14 +73,17 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=1
 
-let g:CommandTMaxHeight=10
+let g:rspec_command = "!bundle exec spring rspec {spec}"
+let g:CommandTMaxHeight=50
 let g:CommandTMatchWindowAtTop=1
-map <Leader>o :CommandT<CR>
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
+let mapleader = "\<Space>"
+
+map <Leader>o :CommandT<CR>
+nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>s :call RunNearestSpec()<CR>
+nnoremap <Leader>l :call RunLastSpec()<CR>
+nnoremap <Leader>a :call RunAllSpecs()<CR>
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
