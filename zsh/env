@@ -11,3 +11,9 @@ export PATH=$PATH:/home/wgriffiths/apps/apache-jmeter-2.11/bin/
 export PATH=$PATH:/home/wgriffiths/apps/sbt/bin
 export PATH=$PATH:/home/wgriffiths/apps/play/
 export PATH=$PATH:/Users/will/play-2.2.3
+
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
+eval "$(rbenv init -)"
+
+export PATH=~/bin:$PATH
+

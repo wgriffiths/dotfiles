@@ -13,10 +13,28 @@ setopt AUTO_PUSHD
 # Allow completing of the remainder of a command
 bindkey "^N" insert-last-word
 
+autoload -U compinit
+compinit -i
+
 # Show contents of directory after cd-ing into it
 chpwd() {
   ls -lrthG
 }
+
+# Define the shell function.
+adra(){
+    cd ~/git/"${1:-}"
+}
+
+# Tell zsh to autocomplete directory names in the same directory as
+# the function's when typing a command based on the shell function.
+compctl -/ -W ~/git adra
+
+
+proj(){
+ cd ~/Development/projects/$1;
+}
+compctl -W ~/Development/projects -/ proj
 
 # Save a ton of history
 HISTSIZE=20000
@@ -66,9 +84,3 @@ source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/env
 
 # Customize to your needs...
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
-eval "$(rbenv init -)"
-
-export PATH=~/bin:$PATH
-export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
-
