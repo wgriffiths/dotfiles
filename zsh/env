@@ -11,3 +11,5 @@ export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/
 export PATH=$PATH:/home/wgriffiths/apps/apache-jmeter-2.11/bin/
 
 export PATH=$PATH:/home/wgriffiths/apps/sbt/bin 
+
+export MOZILLA_FIVE_HOME=/usr/lib/mozilla
