@@ -1,15 +1,15 @@
 export MAVEN_OPTS='-Xmx5120m'
 #export MAVEN_OPTS='-Xmx5120m -XX:MaxPermSize=256m'
-export EDITOR=pico
-
-export ES_HOST=localhost 
-export ES_VERSION=0 
-export ES_PORT=9200 
+export EDITOR=vim
+export ES_HOST=localhost
+export ES_VERSION=0
+export ES_PORT=9200
 
 export PATH=$PATH:/home/wgriffiths/apps/play/
 export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/
 export PATH=$PATH:/home/wgriffiths/apps/apache-jmeter-2.11/bin/
-
 export PATH=$PATH:/home/wgriffiths/apps/sbt/bin 
-
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
+export PATH=$PATH:/home/wgriffiths/apps/sbt/bin
+export PATH=$PATH:/home/wgriffiths/apps/play/
+export PATH=$PATH:/Users/will/play-2.2.3

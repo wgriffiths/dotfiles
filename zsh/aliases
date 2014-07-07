@@ -43,10 +43,14 @@ alias gpr='git pull --rebase'
 alias grc='git rebase --continue'
 alias irb='irb --readline -r irb/completion'
 alias rc='rails console'
+alias rct='rails c test'
 alias migrate='rake db:migrate db:test:prepare'
 alias rs='bundle install && rails server'
 alias ber='be rspec'
+alias rpass='openssl rand -base64 8'
 
+alias titanium.py="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.Beta/titanium.py"
+alias ios_builder="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.Beta/iphone/builder.py"
 
 alias p='cd /home/wgriffiths/Development/projects'
 alias swp2='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-2.2.2 /home/wgriffiths/apps/play; echo "Now using Play 2 :)"'

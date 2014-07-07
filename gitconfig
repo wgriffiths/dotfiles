@@ -2,10 +2,11 @@
 	name = William Griffiths
 	email = william.griffiths@thebookpeople.co.uk
 [push]
-	default = tracking
+	default = simple
 [core]
+	excludesfile = /Users/will/.gitignore
+	default = tracking
 	autocrlf = input
-	editor = pico
 [color]
 	branch = auto
 	diff = auto
