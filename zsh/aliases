@@ -48,6 +48,8 @@ alias rc='rails console'
 alias rct='rails c test'
 alias migrate='rake db:migrate db:test:prepare'
 alias rs='bundle install && rails server'
+alias ber='be rspec'
+alias rpass='openssl rand -base64 8'
 
 #Adra
 alias a='cd ~/git'
@@ -59,4 +61,5 @@ alias titanium.py="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.B
 alias ios_builder="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.Beta/iphone/builder.py"
 alias swp2='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-2.2.2 /home/wgriffiths/apps/play; echo "Now using Play 2 :)"'
 alias swp1='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-1.2.5.1 /home/wgriffiths/apps/play; echo "Now using Play 1 :("'
-
+alias swact='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/activator-1.2.1 /home/wgriffiths/apps/play; echo "Now using Activator"'
+alias a='activator'

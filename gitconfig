@@ -1,8 +1,6 @@
 [user]
 	name = William Griffiths
-	email = william.griffiths@thebookpeople.com
-[credential]
-	helper = osxkeychain
+	email = william.griffiths@thebookpeople.co.uk
 [push]
 	default = simple
 [core]
