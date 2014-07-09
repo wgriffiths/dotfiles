@@ -1,3 +1,4 @@
+set modelines=0     " CVE-2007-2438
 set nocompatible " Required by vundle
 filetype off     " Required by vundle
 
@@ -18,7 +19,6 @@ Plugin 'nanotech/jellybeans.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
 " Use the colorscheme from above
 colorscheme jellybeans
 
@@ -33,7 +33,6 @@ set nowrap
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set autoread
-set guifont=Triskweline_10:h10
 set et
 set sw=2
 set smarttab
@@ -62,17 +61,6 @@ let g:NumberToggleTrigger="<F2>"
 " Highlight the status line
 highlight StatusLine ctermfg=blue ctermbg=yellow
 
-" Format xml files
-au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
-
-set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
-
-set nofoldenable " Say no to code folding...
-" (Hopefully) removes the delay when hitting esc in insert mode
-set noesckeys
-set ttimeout
-set ttimeoutlen=1
-
 let g:rspec_command = "!bundle exec spring rspec {spec}"
 let g:CommandTMaxHeight=50
 let g:CommandTMatchWindowAtTop=1
@@ -85,7 +73,7 @@ nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 nnoremap <Leader>g :<C-U>Gstatus<CR>
 
-nnoremap <Leader> :call RunAllSpecs()<CR>
+nnoremap <Leader>a :call RunAllSpecs()<CR>
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -121,35 +109,3 @@ endif
 " Make it more obvious which paren I'm on
 hi MatchParen cterm=none ctermbg=black ctermfg=yellow
 
-"
-" ========================================================================
-" End of things set by me.
-" ========================================================================
-
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-
-  augroup END
-
-endif " has("autocmd")
