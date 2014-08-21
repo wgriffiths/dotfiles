@@ -8,14 +8,16 @@ export ES_PORT=9200
 export PATH=$PATH:/home/wgriffiths/apps/play/
 export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/
 export PATH=$PATH:/home/wgriffiths/apps/apache-jmeter-2.11/bin/
-export PATH=$PATH:/home/wgriffiths/apps/sbt/bin 
+export PATH=$PATH:/home/wgriffiths/apps/sbt/bin
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
 export PATH=$PATH:/home/wgriffiths/apps/sbt/bin
 export PATH=$PATH:/home/wgriffiths/apps/play/
 export PATH=$PATH:/Users/will/play-2.2.3
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
-eval "$(rbenv init -)"
 
 export PATH=~/bin:$PATH
 
+#export PATH=/home/wgriffiths/apps/jdk1.6.0_45/bin:$PATH
+
+#export JAVA_HOME="/home/wgriffiths/apps/jdk1.6.0_45"

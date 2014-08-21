@@ -84,3 +84,10 @@ source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/env
 
 # Customize to your needs...
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
+#eval "$(rbenv init -)"
+
+export PATH=~/bin:$PATH
+export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
+
+export TERM="xterm-256color"
