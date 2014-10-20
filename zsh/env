@@ -18,4 +18,5 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 eval "$(rbenv init -)"
 
 export PATH=~/bin:$PATH
-
+export TERM=xterm-256color
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`

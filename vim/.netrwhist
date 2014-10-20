@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/will/git/graigddu'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/will/Development/projects/payments-client'
+let g:netrw_dirhist_2='/Users/will/Development/projects/tbp-mobile-dev'
+let g:netrw_dirhist_3='/Users/will/Development/projects/mobile-deals-proxy'
+let g:netrw_dirhist_4='/Users/will/Development/projects/tbp-mobile-deals'
+let g:netrw_dirhist_5='/Users/will/Development/projects/mobile-deals-proxy'

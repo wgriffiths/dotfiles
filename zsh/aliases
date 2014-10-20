@@ -57,9 +57,11 @@ alias ff='cd ~/git/FfynnonFelys'
 alias 360='cd ~/git/ffestiniog360_rails'
 
 #TBP Stuff
-alias titanium.py="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.Beta/titanium.py"
-alias ios_builder="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.Beta/iphone/builder.py"
+alias titanium.py="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.GA/titanium.py"
+alias ios_builder="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.GA/iphone/builder.py"
 alias swp2='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-2.2.2 /home/wgriffiths/apps/play; echo "Now using Play 2 :)"'
 alias swp1='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-1.2.5.1 /home/wgriffiths/apps/play; echo "Now using Play 1 :("'
 alias swact='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/activator-1.2.1 /home/wgriffiths/apps/play; echo "Now using Activator"'
-alias a='activator'
+
+
+alias a='/Users/will/activator-1.2.10/activator'

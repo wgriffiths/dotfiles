@@ -13,6 +13,7 @@ Plugin 'vim-airline'
 Plugin 'vim-fugitive'
 Plugin 'vim-numbertoggle'
 Bundle 'thoughtbot/vim-rspec'
+Plugin 'https://github.com/kien/ctrlp.vim'
 " Colors
 Plugin 'nanotech/jellybeans.vim'
 

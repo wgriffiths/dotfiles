@@ -84,3 +84,9 @@ source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/env
 
 # Customize to your needs...
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/will/.travis/travis.sh ] && source /Users/will/.travis/travis.sh
