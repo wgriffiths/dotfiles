@@ -1,7 +1,7 @@
 export MAVEN_OPTS='-Xmx5120m'
 #export MAVEN_OPTS='-Xmx5120m -XX:MaxPermSize=256m'
 export EDITOR=vim
-export ES_HOST=localhost
+export ES_HOST=elasticsearch
 export ES_VERSION=0
 export ES_PORT=9200
 
@@ -21,3 +21,6 @@ export PATH=~/bin:$PATH
 #export PATH=/home/wgriffiths/apps/jdk1.6.0_45/bin:$PATH
 
 #export JAVA_HOME="/home/wgriffiths/apps/jdk1.6.0_45"
+#
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"

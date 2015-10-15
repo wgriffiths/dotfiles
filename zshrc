@@ -91,3 +91,8 @@ export PATH=~/bin:$PATH
 export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
 
 export TERM="xterm-256color"
+
+PERL_MB_OPT="--install_base \"/home/wgriffiths/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/wgriffiths/perl5"; export PERL_MM_OPT;
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
