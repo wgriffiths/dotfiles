@@ -8,5 +8,5 @@ let g:netrw_dirhist_4='/Users/will/Development/projects/tbp-mobile-deals'
 let g:netrw_dirhist_5='/Users/will/Development/projects/mobile-deals-proxy'
 =======
 let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/wgriffiths/Development/projects/tbp-mobile/app/lib'
->>>>>>> 406daceffb9149f5ea03bab6152f1f317bc9943b
+let g:netrw_dirhist_1='/home/wgriffiths/Development/projects/mobile-deals-proxy'
+>>>>>>> 9b01422b9ad4deb5cee6ed32a3699ae6936fe91e

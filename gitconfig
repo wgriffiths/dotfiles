@@ -15,3 +15,5 @@
 [alias]
 	so = remote show origin
 	po = remote prune origin
+[diff]
+	tool = meld

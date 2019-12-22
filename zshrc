@@ -88,5 +88,25 @@ source $HOME/.dotfiles/zsh/env
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# added by travis gem
-[ -f /Users/will/.travis/travis.sh ] && source /Users/will/.travis/travis.sh
+
+export PATH=~/bin:$PATH
+export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
+
+export TERM="xterm-256color"
+
+PERL_MB_OPT="--install_base \"/home/wgriffiths/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/wgriffiths/perl5"; export PERL_MM_OPT;
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+export PATH="/usr/local/opt/libxslt/bin:$PATH"
+export PATH="$HOME/tools/flutter/bin/:$PATH"
+export LDFLAGS="-L/usr/local/opt/libxslt/lib"
+export CPPFLAGS="-I/usr/local/opt/libxslt/include"
+
+export PKG_CONFIG_PATH="/usr/local/opt/libxslt/lib/pkgconfig"

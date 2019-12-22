@@ -6,62 +6,15 @@ elif [[ $platform == 'Darwin' ]]; then
   alias a='ls -lrthG'
 fi
 
-#Misc
-alias c='cd'
-alias u='cd ..'
 alias rpass='openssl rand -base64 8'
 
-#dotfiles
-alias aliases='vim ~/.dotfiles/zsh/aliases'
-alias d='cd ~/.dotfiles'
-alias dmate='vim ~/.dotfiles'
-
-#SSH
-alias cwmni='ssh will@cwmni.com'
-
-#Java
-alias mvnnt='mvn -U -Dmaven.test.skip=true clean install'
-alias mvnt='mvnnt'
 
 #Git
-alias gadd='git add .'
 alias gc='git commit'
 alias gca='git commit -a'
-alias gcaa='git commit -a --amend -C HEAD'
-alias gcl='git clone'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gd='git diff'
-alias gdc='git diff --cached'
-alias gg='git lg'
-alias gpush='git push'
-alias gpsuh='git push'
-alias gpr='git pull --rebase'
-alias grc='git rebase --continue'
 
 #Rails
-alias bi='bundle install'
-alias be='bundle exec'
-alias bu='bundle update'
-alias irb='irb --readline -r irb/completion'
 alias rc='rails console'
-alias rct='rails c test'
-alias migrate='rake db:migrate db:test:prepare'
 alias rs='bundle install && rails server'
-alias ber='be rspec'
-alias rpass='openssl rand -base64 8'
-
-#Adra
-alias a='cd ~/git'
-alias ff='cd ~/git/FfynnonFelys'
-alias 360='cd ~/git/ffestiniog360_rails'
-
-#TBP Stuff
-alias titanium.py="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.GA/titanium.py"
-alias ios_builder="~/Library/Application\ Support/Titanium/mobilesdk/osx/3.3.0.GA/iphone/builder.py"
-alias swp2='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-2.2.2 /home/wgriffiths/apps/play; echo "Now using Play 2 :)"'
-alias swp1='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/play-1.2.5.1 /home/wgriffiths/apps/play; echo "Now using Play 1 :("'
-alias swact='rm /home/wgriffiths/apps/play;ln -s /home/wgriffiths/apps/activator-1.2.1 /home/wgriffiths/apps/play; echo "Now using Activator"'
 
 
-alias a='/Users/will/activator-1.2.10/activator'

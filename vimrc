@@ -3,7 +3,8 @@ set nocompatible " Required by vundle
 filetype off     " Required by vundle
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
+"set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 
@@ -13,7 +14,8 @@ Plugin 'vim-airline'
 Plugin 'vim-fugitive'
 Plugin 'vim-numbertoggle'
 Bundle 'thoughtbot/vim-rspec'
-Plugin 'https://github.com/kien/ctrlp.vim'
+"  Plugin 'https://github.com/kien/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'
 " Colors
 Plugin 'nanotech/jellybeans.vim'
 
