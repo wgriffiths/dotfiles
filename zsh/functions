@@ -8,3 +8,9 @@ function g {
 
 compdef g=git
 
+gj(){
+ cd ~/go/src/github.com/kodergarten/$1;
+}
+compctl -/ -W  ~/go/src/github.com/kodergarten/ gj
+
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
