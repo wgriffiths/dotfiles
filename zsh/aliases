@@ -1,14 +1,3 @@
-# Handle the fact that this file will be used with multiple OSs
-platform=`uname`
-if [[ $platform == 'Linux' ]]; then
-  alias a='ls -lrth --color'
-elif [[ $platform == 'Darwin' ]]; then
-  alias a='ls -lrthG'
-fi
-
-alias rpass='openssl rand -base64 8'
-
-
 #Git
 alias gc='git commit'
 alias gca='git commit -a'

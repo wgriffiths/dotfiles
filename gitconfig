@@ -1,6 +1,6 @@
 [user]
 	name = William Griffiths
-	email = william.griffiths@thebookpeople.co.uk
+	email = william@ycymro.com
 [push]
 	default = simple
 [core]
@@ -17,3 +17,8 @@
 	po = remote prune origin
 [diff]
 	tool = meld
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

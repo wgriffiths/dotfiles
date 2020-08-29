@@ -31,10 +31,15 @@ adra(){
 compctl -/ -W ~/git adra
 
 
+gproj(){
+ cd ~/go/src/github.com/kodergarten/$1;
+}
+compctl -/ -W  ~/go/src/github.com/kodergarten/ gproj
+
 proj(){
  cd ~/Development/projects/$1;
 }
-compctl -W ~/Development/projects -/ proj
+compctl -/ -W ~/Development/projects -/ proj
 
 # Save a ton of history
 HISTSIZE=20000
@@ -85,28 +90,32 @@ source $HOME/.dotfiles/zsh/env
 
 # Customize to your needs...
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-
 export PATH=~/bin:$PATH
-export PATH=$PATH:/home/wgriffiths/Development/handy-scripts/bin
 
 export TERM="xterm-256color"
 
 PERL_MB_OPT="--install_base \"/home/wgriffiths/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/wgriffiths/perl5"; export PERL_MM_OPT;
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+export PATH="/usr/local/opt/terraform/bin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 
 export PATH="/usr/local/opt/libxslt/bin:$PATH"
-export PATH="$HOME/tools/flutter/bin/:$PATH"
 export LDFLAGS="-L/usr/local/opt/libxslt/lib"
 export CPPFLAGS="-I/usr/local/opt/libxslt/include"
 
 export PKG_CONFIG_PATH="/usr/local/opt/libxslt/lib/pkgconfig"
+
+
+eval "$(rbenv init -)"
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/private/tmp/google-cloud-sdk/path.zsh.inc' ]; then . '/private/tmp/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/private/tmp/google-cloud-sdk/completion.zsh.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.zsh.inc'; fi
