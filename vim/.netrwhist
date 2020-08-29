@@ -1,4 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/wgriffiths/Development/projects/tbp-mobile/app/lib'
-let g:netrw_dirhist_2='/Users/will/git/kodergarten/iot-dashboard-docker/.git'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/will/.dotfiles/.git'
